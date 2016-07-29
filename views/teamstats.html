@@ -1,0 +1,51 @@
+<div class="jumbotron" ng-controller = "dashCtrl as dash">
+    
+  <h1>Team Stats</h1>
+  
+  <div class = "row">
+          <div class = "tabledata col-md-6 col-md-offset-3">
+            <hr>
+            <table >
+            <caption> <b> Daily Metrics </b></caption>
+            
+            <thead>
+            <tr>
+            <th>Name </th>
+            <th>Calls </th>
+            <th>Connects</th>
+            <th>E-mails</th>
+            
+            </tr>
+            
+            </thead>
+            
+            <tbody >
+                
+            <tr ng-repeat = "rep in dash.Employees">
+            <td > {{rep.name}}</td>
+            <td > 50</td>
+            <td >50</td>
+            <!--<td class="actual bar" style="height: {{dash.currentRep.height}}px;"></td>-->
+            <td >50</td>
+            </tr>
+          
+            
+           
+            
+            </tbody>
+            
+            </table>
+           
+            
+            
+          </div>
+      
+      
+      
+      </div>
+
+
+
+
+  
+</div>
